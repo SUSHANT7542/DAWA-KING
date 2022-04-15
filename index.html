@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAWA KING</title>
+    <link rel="stylesheet" href=project.css>
+    <link rel="stylesheet" media="screen and (max-width:870px)" href=phone.css>
+    <script>
+        function bmi() {
+            var w = parseFloat(document.getElementById("weight").value);  // To get weight from the input with id as weight
+            var h = parseFloat(document.getElementById("height").value) / 100; // Convert height to meters
+            var b = w / (h * h);  // According to the formula
+            var String = "Your body mass index is" + (b.toPrecision(3)) + "kg/m^2";
+            document.getElementsByClassName("ans")[0].innerHTML = String.fontsize(5) // writing to the output 
+
+        }
+        function fun() {
+            document.getElementById("t1").reset();
+        }
+
+
+
+    </script>
+
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul id="u1">
+            <li><a href="">HOME</a></li>
+            <li><a href="">ITEMS</a></li>
+            <li><a href="">CONTACT US </a></li>
+            <li><a href="">ABOUT US</a></li>
+        </ul>
+
+    </nav>
+
+    <section id="home">
+        <div id="hh">
+            <h1 id="hhh">WELCOME TO OFFICIAL PAGE OF DAWA KING</h1>
+            <p>We deliver all types of medicine at very reasonable cost.
+                Our products are very authentic.
+            </p>
+        </div>
+
+        <div class="items">
+            <div id="box1">
+                <h1>DIABETES CARE MEDICINE</h1>
+                <p>Diabetes care related medicine
+                    Metformin is a tried and tested medicine that has been used for many decades to
+                    treat type 2 diabetes, and is recommended by most experts as first-line therapy.
+                    It is affordable,effective, and well tolerated by most people
+                </p>
+
+            </div>
+            <div id="box2">
+                <h1>PROTEINS SUPPLEMENT</h1>
+                <p>
+                    Protein supplementation promotes greater gains in lean body mass and muscle strength for
+                    both trained and untrained individuals as the intensity, frequency, and duration of
+                    strength training increases.Protein supplementation increases
+                    muscle strength and size during prolonged strength training in healthy adults
+
+                </p>
+            </div>
+            <div id="box3">
+                <h1>BABY CARE</h1>
+                <p>
+                    Baby care medicine such as johnsons shampoo, oil, soap, cream these are the
+                    important product for new born babies and these products are availaible here </p>
+            </div>
+
+        </div>
+        <div id="order">
+            <form id="f11">
+                <div>
+                    ENTER NAME OF MEDICINE: <input type="text">
+                </div>
+                <div>
+                    ITEM TYPE: <input type="checkbox" value="TABLET"> TABLET
+                    <input type="checkbox" value="SYRUP"> SYRUP
+                    <input type="checkbox" value="DROP"> DROP <br>
+                </div>
+                <div>
+                    QUANTITY: <input type="number" value="QUANTITY" placeholder="NO.OF PIECE">
+                </div>
+                <div>
+                    <input type="submit" value="ORDER NOW">
+                </div>
+
+            </form>
+        </div>
+    </section>
+    <section class="bmi">
+        <div class="bmi1">
+            <h1>BMI CALCULATIONS</h1>
+            <p>In this section we will calculate body mass index of human body
+                Body mass index (BMI) is a value derived from the mass (weight) and height
+                of a person. The BMI is defined as the body mass divided by the square of the
+                body height, and is expressed in units of kg/m2, resulting from mass in
+                kilograms and height in metres.
+
+                The BMI may be determined using a table[a] or chart which displays BMI as a
+                function
+                of mass and height using contour lines or colours for different BMI categories,
+                and which may use other units of measurement (converted to metric units for
+                the calculation).[b]
+
+                The BMI is a convenient rule of thumb used to broadly categorize a person as
+                underweight,
+                normal weight, overweight, or obese based on tissue mass (muscle, fat, and bone)
+                and height.
+                Major adult BMI classifications are underweight (under 18.5 kg/m2),
+                normal weight (18.5 to 24.9), overweight (25 to 29.9), and obese (30 or more).[1]
+
+            </p>
+
+            <form id="t1">
+                <div>
+                    HEIGHT (in cm):
+                    <input type="text" id="height">
+                </div>
+                <div>
+                    WEIGHT (in kg):
+                    <input type="text" id="weight">
+                </div>
+            </form>
+            <div>
+                <button type="submit" onclick="bmi()" value="bmi">CALCULATE</button>
+                <button onclick="fun()" value="fun">RESET</button>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <h1>CONTACT US</h1>
+        <div> Name:<input type="text" placeholder="Enter your name"> </div>
+        <div> Mobile No: <input type="text" placeholder="Enter your mobile number"> </div>
+        <div>Email Id: <input type="text" placeholder="Enter your mail id"></div>
+        <div>Message: <input type="text" placeholder="Enter your message"></div>
+    </section>
+    <footer>
+        copyright &copy; www.dawaKing.com All rights reserved.
+    </footer>
+
+</body>
+
+</html>
