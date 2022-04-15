@@ -47,7 +47,7 @@ a:hover{
 #home::before{
     content: "";
     position: absolute;
-    background: url('../img3.jpg') no-repeat center center/cover;
+    background: url('img3.jpg') no-repeat center center/cover;
     z-index: -1;
     height: 95%;
     width:100%;
@@ -112,7 +112,7 @@ input[type="submit"]{
     height: 45%;
     z-index: -1;
     opacity: 0.5;
-    background: url('../image1.jpg') no-repeat center center/cover;
+    background: url('image1.jpg') no-repeat center center/cover;
     position: absolute;
     left:0;
     margin-top: 55px;
